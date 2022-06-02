@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.2.32526.322
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChartsApp.Server", "ChartsApp\Server\ChartsApp.Server.csproj", "{FF7E5579-C23B-4C59-8AEE-007CF8AFA8CD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ChartsApp.Server", "ChartsApp\Server\ChartsApp.Server.csproj", "{FF7E5579-C23B-4C59-8AEE-007CF8AFA8CD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChartsApp.Client", "ChartsApp\Client\ChartsApp.Client.csproj", "{6DE951FB-A2BC-4D2F-8865-CEFEEB6C9CB5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ChartsApp.Client", "ChartsApp\Client\ChartsApp.Client.csproj", "{6DE951FB-A2BC-4D2F-8865-CEFEEB6C9CB5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChartsApp.Shared", "ChartsApp\Shared\ChartsApp.Shared.csproj", "{E0251140-FDB8-4C0B-AB9A-96A22384F643}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ChartsApp.Shared", "ChartsApp\Shared\ChartsApp.Shared.csproj", "{E0251140-FDB8-4C0B-AB9A-96A22384F643}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
