@@ -1,0 +1,41 @@
+﻿@page "/fetch-bear-attacks"
+@using ChartsApp.Shared
+@inject HttpClient Http
+
+<PageTitle>Bear Attacks</PageTitle>
+
+<h1>Bear Attacks</h1>
+
+<p>This component demonstrates fetching data from the server.</p>
+
+@if (bearAttacks == null)
+{
+    <p><em>Loading...</em></p>
+}
+else
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Name</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var bearAttack in bearAttacks)
+            {
+                <tr>
+                    <td>@bearAttack.Name</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+
+@code {
+    private BearAttack[]? bearAttacks;
+
+    protected override async Task OnInitializedAsync()
+    {
+        bearAttacks = await Http.GetFromJsonAsync<BearAttack[]>("BearAttack");
+    }
+}
