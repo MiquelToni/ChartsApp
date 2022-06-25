@@ -1,11 +1,13 @@
+using ChartsApp.Server.Domain.Interfaces;
+using ChartsApp.Server.Repository.BearAttackRepo;
 using Microsoft.AspNetCore.ResponseCompression;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-
 builder.Services.AddControllersWithViews();
 builder.Services.AddRazorPages();
+builder.Services.AddScoped<IBearAttackRepo, BearAttackRepo>(); // Add dependency injecction for BearAttack 
 
 var app = builder.Build();
 

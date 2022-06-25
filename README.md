@@ -39,8 +39,3 @@ In this app we created under controllers a controller BearAttackController that 
 ### Shared: `ChartsApp/Shared`
 
 The shared project is meant to hold all the models used to comunicate the Client and the Server. For our task we added `BearAttack` model and its types. Each BearAttack represents a row of the `Data/bear_attack.csv` stored in the Server project (probably there is a better way to do it...).
-
-## TODOs
-
-1. Build first chart
-2. Hide boilerplate stuff
